@@ -1,0 +1,27 @@
+<center>
+<h1>Listing scfs</h1>
+<bgcolor="red">
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Age</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @scfs.each do |scf| %>
+  <tr>
+    <td><%= scf.name %></td>
+    <td><%= scf.age %></td>
+    <td><%= link_to 'Show', scf %></td>
+    <td><%= link_to 'Edit', edit_scf_path(scf) %></td>
+    <td><%= link_to 'Destroy', scf, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Scf', new_scf_path %>
+</center>

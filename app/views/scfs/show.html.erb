@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @scf.name %>
+</p>
+
+<p>
+  <b>Age:</b>
+  <%= @scf.age %>
+</p>
+
+
+<%= link_to 'Edit', edit_scf_path(@scf) %> |
+<%= link_to 'Back', scfs_path %>
