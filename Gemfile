@@ -5,6 +5,7 @@ gem 'bootstrap-sass', '2.0.0'
 gem 'execjs'
 gem 'therubyracer'
 gem 'rspec-rails'
+gem 'bcrypt-ruby'
 #gem 'bootstrap-sass'
 
 # Bundle edge Rails instead:
