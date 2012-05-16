@@ -7,7 +7,7 @@ gem 'therubyracer'
 gem 'rspec-rails'
 gem 'bcrypt-ruby'
 #gem 'bootstrap-sass'
-
+gem 'factory_girl_rails'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
@@ -33,6 +33,8 @@ gem 'jquery-rails'
 
 group :test do
   gem 'capybara', '1.1.2'
+
+ # gem 'factory_girl_rails'
 end
 
 # To use Jbuilder templates for JSON
