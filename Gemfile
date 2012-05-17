@@ -6,8 +6,11 @@ gem 'execjs'
 gem 'therubyracer'
 gem 'rspec-rails'
 gem 'bcrypt-ruby'
+gem 'faker'
 #gem 'bootstrap-sass'
 gem 'factory_girl_rails'
+gem 'gravatar-ultimate'
+gem 'will_paginate'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
