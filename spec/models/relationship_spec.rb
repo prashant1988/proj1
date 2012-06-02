@@ -1,9 +1,9 @@
 require 'spec_helper'
 
 describe Relationship do
-let(:follower){FactoryGirl.create(:user)}
+  let(:follower){FactoryGirl.create(:user)}
   let (:followed){FactoryGirl.create(:user)}
- let(:relationship) {follwer.relationships.builds(followed_id: follwed.id)}
+  let(:relationship){follwer.relationships.builds(followed_id: follwed.id)}
 
   subject{ relationships }
 

@@ -15,11 +15,11 @@ describe User do
   it { should respond_to(:password) }
   it { should respond_to(:password_confirmation) }
   it { should respond_to(:remember_token) }
-  it { should respond_to (:admin)}
+  it { should respond_to(:admin)}
   it { should respond_to(:authenticate) }
   it { should respond_to(:microposts) }
-  it {should reaspond_to (:feed) }
-  it {shpuld response_to (:relationships)}
+  it {should reaspond_to(:feed) }
+  it {shpuld response_to(:relationships)}
   it { should respond_to(:followed_users) }
   it { should respond_to(:reverse_relationships) }
   it { should respond_to(:followers) }

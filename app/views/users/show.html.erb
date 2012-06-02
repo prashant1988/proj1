@@ -9,10 +9,19 @@
     </section>
     <section>
       <%= render 'shared/stats' %>
-      <% if @users.any? %>
+      <% if User.any? %>
           <div class="user_avatars">
-            <% @users.each do |user| %>
-                <%= link_to gravatar_for(user, size: 30), user %>
+            <% @user.followed_users.each do |user| %>
+                <%= link_to gravatar_for(user), user %>
+            <% end %>
+          </div>
+      <% end %>
+    </section>
+    <section>
+      <% if User.any? %>
+          <div class="user_avatars">
+            <% @user.followers.each do |user| %>
+                <%= link_to gravatar_for(user), user %>
             <% end %>
           </div>
       <% end %>
@@ -20,11 +29,10 @@
   </aside>
   <div class="span8">
     <h3><%= @title %></h3>
-    <% if @users.any? %>
+    <% if User.any? %>
         <ul class="users">
-          <%= render @users %>
+          <%= render @user %>
         </ul>
-        <%= will_paginate %>
     <% end %>
   </div>
 </div>
